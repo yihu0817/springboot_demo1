@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://localhost:3306/springboot?characterEncoding=utf8&useSSL=true
+    username: root
+    password: b123
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc: 
+    view: 
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+mybatis: 
+  mapper-locations: classpath:com/ittx/java1608/springbootdemo1/mapping/*.xml
+
+test: 
+  username: viktor
+  password: 123
+  
+# springboot中配置mybaits日志输出
+logging: 
+    level:
+        com.ittx.java1608.sbdemo2.dao: TRACE
