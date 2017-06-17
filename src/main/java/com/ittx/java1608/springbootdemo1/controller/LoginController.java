@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ittx.java1608.springbootdemo1.mapper.UserMapper;
 import com.ittx.java1608.springbootdemo1.model.User;
+import com.ittx.java1608.springbootdemo1.service.UserService;
 
 @Controller
 public class LoginController {
 	@Autowired
 	private UserMapper userMapper;
-	
+
 	@RequestMapping("/")
 	@ResponseBody
 	public String hello() {
@@ -46,4 +47,6 @@ public class LoginController {
 		}
 		return "login";
 	}
+	
+	
 }

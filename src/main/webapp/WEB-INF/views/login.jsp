@@ -13,7 +13,7 @@
 			<input type="text" name="username"/>
 		</div>
 		<div>
-			<label>密&nbsp;&nbsp;&nbsp;码:</label>
+			<label>密&nbsp;码:</label>
 			<input type="text" name="password"/>
 		</div>
 		<input type="submit" value="提交"/>

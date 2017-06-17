@@ -6,4 +6,8 @@
 		resultType="com.ittx.java1608.springbootdemo1.model.User">
 		select * from user where username=#{username}
 	</select>
+	
+	<insert id="insertuser" parameterType="com.ittx.java1608.springbootdemo1.model.User">
+		insert into user (id,username,password) values (#{id},#{username},#{password}) 
+	</insert>
 </mapper>
